@@ -189,18 +189,11 @@ export async function GET() {
 		}
 
 		return NextResponse.json({ requestUrl, statusUrl });
-	} catch (errResponse) {
-		if (errResponse instanceof Response) {
-			console.error(`Unhandled error: ${errResponse}`);
-			return new Response(
-				JSON.stringify({ message: 'Unhandled error' }),
-				{
-					status: 500,
-				},
-			);
-		}
-
-		return errResponse;
+	} catch (err) {
+		console.error(`Unhandled error: ${err}`);
+		return new Response(JSON.stringify({ message: 'Unhandled error' }), {
+			status: 500,
+		});
 	}
 }
 

@@ -116,18 +116,11 @@ export async function POST(request: Request) {
 				500,
 			),
 		);
-	} catch (errResponse) {
-		if (errResponse instanceof Response) {
-			console.error(`Unhandled error: ${errResponse}`);
-			return new Response(
-				JSON.stringify({ message: 'Unhandled error' }),
-				{
-					status: 500,
-				},
-			);
-		}
-
-		return errResponse;
+	} catch (err) {
+		console.error(`Unhandled error: ${err}`);
+		return new Response(JSON.stringify({ message: 'Unhandled error' }), {
+			status: 500,
+		});
 	}
 }
 
