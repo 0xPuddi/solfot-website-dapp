@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
 
 	return (
 		<main
-			className={`flex items-center justify-center py-16 px-16 ${darkMode ? 'bg-black text-white' : 'bg-white text-black'}`}
+			className={`flex items-center justify-center py-16 px-16 ${darkMode ? 'bg-black text-white' : 'bg-white text-black'} pt-28`}
 		>
 			<div className="flex items-center justify-center max-w-screen-xl flex-col gap-20">
 				<h1 className="text-4xl font-extrabold">
