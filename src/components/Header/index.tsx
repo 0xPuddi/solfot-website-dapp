@@ -24,7 +24,7 @@ export default function Header() {
 			<div className="hidden lg:flex justify-center items-center gap-4">
 				<Image src={'/solana.png'} alt="logo" width={40} height={40} />
 				<p className=" font-bold ps-2 text-base">
-					BET&nbsp;ON&nbsp;FANTASY&nbsp;PREMIER&nbsp;LEAGUE&nbsp;FOR&nbsp;GAMEWEEK&nbsp;7
+					BET&nbsp;ON&nbsp;FANTASY&nbsp;PREMIER&nbsp;LEAGUE&nbsp;FOR&nbsp;GAMEWEEK&nbsp;8
 				</p>
 				<Image src={'/usdc.png'} alt="logo" width={50} height={50} />
 			</div>
