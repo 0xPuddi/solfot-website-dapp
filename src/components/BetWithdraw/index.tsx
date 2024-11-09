@@ -105,9 +105,9 @@ export default function BetWithdraw() {
 
 				<WithdrawButton
 					disabled={
-						withdrawableBalance
-							? withdrawableBalance.asNumber > 0
-							: false
+						withdrawableBalance && withdrawableBalance.asNumber > 0
+							? false
+							: true
 					}
 					amount={
 						withdrawableBalance ? withdrawableBalance.asNumber : 0
